@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QRCODE</title>
+  <title>Cartão de Visita Virtual Greylogix</title>
   <style>
     body {
-      height: 100%;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      height: 100vh;
       width: 100%;
       background-image: url('/VCardGreylogix/background-greylogix.jpg');
       background-size: cover;
@@ -139,7 +142,8 @@
     fieldset {
       margin-left: 15%;
       margin-right: 25%;
-      margin-top: 5%;
+      margin-top: auto;
+      margin-bottom: auto;
       width: 600px;
       padding: 20px 40px;
       font-size: 17PX;
@@ -172,12 +176,12 @@
 <body>
 
   <fieldset>
-    <h1>QR Code Generator</h1>
+    <h1>Cartão de Visita Virtual Greylogix</h1>
     <br>
     <div class="corpo">
       <div id="formulario">
         <div class="name">
-          <label for="name">Full Name<p> *</p></label>
+          <label for="name">Nome <p> *</p></label>
           <br>
           <input id="name" type="name" required placeholder="Ex: Name and Lastname (Não colocar acentos)">
           <br />
@@ -198,26 +202,26 @@
         </div>
 
         <div class="post">
-          <label for="Area">Workspace<p>*</p></label>
+          <label for="Area">Area <p>*</p></label>
           <br />
           <input id="Area" type="Area" required placeholder="Ex: Gerente de processos">
         </div>
 
         <br />
         <p class="obrigatorio">
-        <p>*</p> Mandatory field</p>
+        <p>*</p> Campo obrigatório</p>
         <br />
         <br />
         <br />
         <img src="qrcode-container" style="display: inline-block;" alt="">
 
         <br />
-        <button class="gerar" onclick="gerar_qr_code()" id="gerar_qrcode">Generate</button>
+        <button class="gerar" onclick="gerar_qr_code()" id="gerar_qrcode">Gerar QRCode</button>
       </div>
 
     </div>
     <div class="qrcode" id="qrcode" class="qrCode"></div>
-    <button class="buttonqr" id="baixar">Download</button>
+    <button class="buttonqr" id="baixar">Baixar</button>
 
     <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
   </fieldset>
