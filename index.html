@@ -5,15 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QRCODE</title>
-  <!--<link rel="stylesheet" href="css/estilofinal.css">-->
   <style>
     body {
       height: 100%;
       width: 100%;
-      background-image: url('/VCardGreylogix/background-greylogix.png');
+      background-image: url('/VCardGreylogix/background-greylogix.jpg');
       background-size: cover;
-      /* background-size: auto auto;*/
-      /*background-position: center top;*/
       background-position: left center;
     }
 
@@ -73,7 +70,6 @@
     }
 
     input:hover {
-      /*position:absolute;*/
       border-radius: 5px;
       width: 500px;
       border: none;
@@ -217,7 +213,6 @@
 
         <br />
         <button class="gerar" onclick="gerar_qr_code()" id="gerar_qrcode">Generate</button>
-        <!--onclick="gerar_qr_code()"-->
       </div>
 
     </div>
@@ -225,11 +220,9 @@
     <button class="buttonqr" id="baixar">Download</button>
 
     <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
-    <!--<script src= "qrcode_final.js"></script>-->
   </fieldset>
   <script>
     const gerar_qr_code = () => {
-      /*window.location.href = 'Escaneio.html';*/
       generate_VCcard();
 
       function generate_VCcard() {
